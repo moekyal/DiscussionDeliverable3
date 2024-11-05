@@ -1,0 +1,195 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1{
+  text-align: left;
+  position: sticky;
+  margin-right: 20px;
+  color: #FFFFFF;
+}
+
+/* img{
+  padding: 5%;
+  width: 100%;
+} */
+
+
+a{
+  color: #0052A3;
+}
+
+a:visited {
+  color: #551a8b; /* Color for visited links (or choose another color) */
+}
+
+body {
+  font-family: 'Arial', sans-serif; /* Use a clean, legible font */
+  margin: 0;
+  padding: 2%;
+  background-color: #ffffff; /* Light mode background */
+  color: #000000; /* Default text color */
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  body {
+      background: rgb(0, 0, 0);
+      color: rgb(255, 255, 255);
+  }
+}
+
+/* Responsive Typography */
+h1, h2, h3 {
+  margin: 0;
+  padding: 0.5em 0;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  padding: 1em;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 100;
+  background-color: #0056b3;
+  display: flex; /* Enable flexbox layout */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+}
+
+/* Scrollable Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow-y: scroll;
+  overflow-x: auto; /* Allow horizontal scrolling */
+}
+
+th, td {
+  padding: 0.5em;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+
+tr:hover {
+  background-color: #f1f1f1; /* Hover effect for accessibility */
+  color: black;
+}
+
+/* Circular Images */
+img {
+  width: 50px; /* Fixed size for mobile */
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover; /* Ensure images fit within the circle */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Floating Action Button */
+.fab {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+/* Reduced Motion for Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+      transition: none; /* Disable transitions */
+  }
+}
+
+/* Button Hover Effect for Touch Devices */
+.fab:hover {
+  background: #0056b3; /* Darker shade on hover */
+}
+
+/* Progress Bar */
+.progress {
+  width: 100%;
+  height: 20px;
+  background: #e0e0e0;
+  border-radius: 10px;
+}
+
+.progress-bar {
+  height: 100%;
+  background: #76c7c0; /* Green progress bar */
+  border-radius: 10px;
+  transition: width 0.3s ease-in-out;
+}
+
+/* High Contrast Mode */
+@media (prefers-color-scheme: high-contrast) {
+  body {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+  }
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;          /* Makes it clear that it's clickable */
+  padding: 8px;
+  color: #333;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+}
+
+/* Card Layout for Table Reflow */
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 1em 0;
+  padding: 1em;
+}
+
+/* Collapsible Sections */
+.collapsible {
+  cursor: pointer;
+  padding: 1em;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.collapsible.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+.content {
+  display: none;
+  overflow: hidden;
+  padding: 0 1em;
+}
+
+/* Animations for Smooth Transitions */
+.fade-in{
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
