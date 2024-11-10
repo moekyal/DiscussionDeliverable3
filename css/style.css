@@ -34,6 +34,11 @@ body {
   color: #000000; /* Default text color */
 }
 
+:focus {
+  outline: 0.15em solid #76c7c0; /* Scales with font size */
+  outline-offset: 0.1em;
+}
+
 /* Dark Mode Support */
 @media (prefers-color-scheme: dark) {
   body {
