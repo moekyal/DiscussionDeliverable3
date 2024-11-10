@@ -115,6 +115,23 @@ img {
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  /* Disable lightbox animations */
+  .lightbox {
+      transition: none !important;
+      animation: none !important;
+  }
+
+  /* Disable other potential animations in your lightbox */
+  .lightbox-overlay {
+      transition: none !important;
+  }
+
+  .lightbox-content {
+      transition: none !important;
+  }
+}
+
 /* Button Hover Effect for Touch Devices */
 .fab:hover {
   background: #0056b3; /* Darker shade on hover */
