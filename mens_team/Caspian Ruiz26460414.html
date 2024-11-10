@@ -7,6 +7,7 @@
        <script src="https://kit.fontawesome.com/YOUR_ID.js" crossorigin="anonymous"></script>
 
       <link rel = "stylesheet" href = "../css/reset.css">
+      <link rel="stylesheet" href="../dist/css/lightbox.css">
       <link rel = "stylesheet" href = "../css/style.css">
       
 
@@ -61,7 +62,9 @@
    <header>
       <!--Athlete would input headshot-->
        <h1>Caspian Ruiz</h1>
+       <a href = "../images/profiles/26460414.jpg" target= "_blank" data-lightbox = "athlete" data-title="Capsian Ruiz"> 
       <img src="../images/profiles/26460414.jpg" alt="Athlete headshot" width="200"> 
+      </a>
    </header>
    <main id = "main">
       <section id= "athlete-sr-table">
@@ -148,6 +151,14 @@
 
 
                      </footer>
+                     <script src="../dist/js/lightbox-plus-jquery.js"></script>
+                     <script>
+                        lightbox.option({
+                          'resizeDuration': 200,
+                          'wrapAround': true,
+                          'positionFromTop': 50
+                        })
+                    </script>
                      <script src="../js/imagePlaceholder.js"></script>
                </body>
          </html>
