@@ -94,6 +94,10 @@ def gen_athlete_page(data, outfile):
       <!--Athlete would input headshot-->
        <h1>{data["name"]}</h1>
       <img src="../images/profiles/{data["athlete_id"]}.jpg" alt="Athlete headshot" width="200"> 
+      <button class="bookmark-btn">
+   <i class="fa-solid fa-bookmark"></i> Bookmark
+</button>
+
    </header>
    <main id = "main">
       <section id= "athlete-sr-table">
@@ -175,6 +179,17 @@ def gen_athlete_page(data, outfile):
 
 
                      </footer>
+                     <!-- Include external JS file for bookmark toggle functionality -->
+      <script src="../js/bookmark.js"></script>
+
+                     <script src="../dist/js/lightbox-plus-jquery.js"></script>
+                     <script>
+                        lightbox.option({
+                          'resizeDuration': 200,
+                          'wrapAround': true,
+                          'positionFromTop': 50
+                        })
+                    </script>
                      <script src="../js/imagePlaceholder.js"></script>    
                </body>
          </html>
